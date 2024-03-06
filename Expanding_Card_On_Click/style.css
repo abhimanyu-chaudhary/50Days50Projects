@@ -1,0 +1,59 @@
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    gap: 30px;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 550px;
+    border-radius: 50px;
+    position: relative;
+    transition: all 900ms ease-in;
+}
+.card h3{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: white;
+    opacity: 0;
+    transition: all 900ms ease-out;
+}
+.card.active{
+    width: 800px;
+}
+.card.active h3{
+    -webkit-transition: all 900ms ease-in;
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        flex-direction: column;
+        gap: 0;
+        width: 90%;
+    }
+    .card{
+        margin-top: 50px;
+        height: 40px;
+        width: 100%;
+    }
+    .card.active{
+        height: 200px;
+        width: 100%;
+    }
+  }
