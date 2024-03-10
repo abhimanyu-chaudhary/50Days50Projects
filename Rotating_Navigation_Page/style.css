@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    /* background-color: black; */
+    background-color: aliceblue;
+
+}
+.container{
+    box-sizing: border-box;
+    margin: 0px auto;
+    transform-origin: top left;
+    transition: transform .5s linear;
+}
+.nav{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: -50px;
+    top: -50px;
+    border-radius: 50%;
+    transition: .5s ease-out;
+    z-index: 1;
+}
+.menu{
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    right: 25%;
+    bottom: 17%;
+    cursor: pointer;
+}
+.close{
+    font-size: 13px;
+    position: absolute;
+    left: 25%;
+    bottom: 17%;
+    cursor: pointer;
+    rotate: -10deg;
+}
+.nav-after{
+    rotate: -80deg;
+    transition: .5s ease-in;
+}
+.center-body-after{
+    transform: rotate(-25deg);
+    transform-origin: top left;
+    transition: transform .5s linear;
+}
+.center-body{
+    margin: 0px 90px;
+    transition: .6s ease;
+}
+.center-body h6{
+    font-size: 16px;
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+.center-body p{
+    margin-top: 0px;
+    font-size: 8px;
+    font-style: italic;
+}
+.center-body h3{
+    font-size: 16px;
+}
+.center-body .matter{
+    margin-top: 0px;
+    font-size: 9px;
+    text-align: justify;
+}
+.center-body .image{
+    width: 500px;
+    height: 300px;
+}
+.matter-bottom{
+    margin-top: 10px;
+    font-size: 9px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.slider{
+    margin: 0;
+    height: 230vh;
+    width: 47%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: -317px;
+    margin-top: -70px;
+    transform-origin: top left;
+    transition: transform .5s linear;
+    z-index: -1;
+}
+.slider-after{
+    transform: rotate(-25deg);
+    transform-origin: top left;
+    transition: transform .5s linear;
+}
+.slider .slider-button{
+    font-size: 10px; 
+}
+span{
+    font-size: 10px;
+}
